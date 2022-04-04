@@ -144,7 +144,11 @@ hr.star-dark {
     border-color: #000;
 }
 
-.star-light , .star-dark {
+hr.star-primary {
+    border-color: #1ABC9B;
+}
+
+.star-light , .star-dark , .star-primary {
     border: none;
     border-top: 0.4rem solid;
     border-radius: 1rem;
@@ -152,6 +156,11 @@ hr.star-dark {
     margin: 2.5rem auto;
     overflow: visible;
     height: 0;
+}
+
+.star-primary::after {
+    color: #1ABC9B;
+    background-color: #fff;
 }
 
 .star-light::after {
@@ -164,7 +173,7 @@ hr.star-dark {
     background-color: #fff;
 }
 
-.star-light::after , .star-dark::after {
+.star-light::after , .star-dark::after , .star-primary::after {
     content: "\2605";
     font-weight: 900;
     font-size: 3.2rem;
@@ -224,6 +233,8 @@ hr.star-dark {
     border-radius: 2rem;
 }
 
+/* About */
+
 #about {
     background-color: #1ABC9B;
     color: #fff;
@@ -263,6 +274,39 @@ hr.star-dark {
 
 #about-bottom {
     width: 100%;
-    height: auto;
-    
+    height: auto;    
+}
+
+
+
+#contact {    
+    background-color: #fff;
+    color: #1ABC9B;
+}
+
+#contact h2 {
+    font-size: 5rem;
+}
+
+#contact-form {
+    width: 70%;
+    margin: 5rem auto;
+    text-align: left;
+}
+
+#contact-form .form-group {
+    border-bottom: .2rem solid #222222;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.form-group input , .form-group textarea {
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+}
+
+input , textarea , label:focus {
+    outline: 0;
 }
