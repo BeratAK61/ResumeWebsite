@@ -19,6 +19,11 @@ body {
 a { text-decoration: none; }
 ul { list-style: none; }
 
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
 .clearfix::after {
     content: '';
     display: block;
@@ -71,6 +76,50 @@ nav #nav-links .nav-item .nav-link {
 }
 nav #nav-links .nav-item .nav-link:hover {
     color: #000;
-
 }
 
+header {
+    background-color: #1abc9b;
+    padding-top: calc(88px + 6.1rem);
+    text-align: center;
+    height: 700px;
+}
+
+header .img-fluid {
+    max-width: 261px;
+    height: auto;
+    border-radius: 15%;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: 'Lato';
+    font-weight: 300;
+}
+
+.star-light {
+    border: none;
+    border-top: 0.4rem solid #fff;
+    border-radius: 1rem;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+
+.star-light::after {
+    content: "\2605";
+    color: #fff;
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -2.7rem;
+    padding: 0 1rem;
+    background-color: #1abc9b;
+}
