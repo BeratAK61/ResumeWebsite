@@ -24,6 +24,36 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Poppins';
 }
 
+section {
+    background-color: #fff;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-outline {  
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;    
+    padding: 2.2rem 1.6rem;
+}
+
+.btn-outline:hover {
+    color: #212529;
+    background-color: #fff;
+
+}
+
 .clearfix::after {
     content: '';
     display: block;
@@ -145,13 +175,6 @@ hr.star-dark {
 
     /* Portfolio */
 
-#portfolio {
-    height: 600px;
-    background-color: #fff;
-    padding: 10rem 0;
-    text-align: center;
-}
-
 #portfolio h2 {
     font-size: 5rem;
 }
@@ -168,6 +191,7 @@ hr.star-dark {
 
 .portfolio-item img {
     display: block;
+    border-radius: 2rem;
 }
 
 .portfolio-item .img-fluid-p {
@@ -183,7 +207,7 @@ hr.star-dark {
     height: 100%;
     background-color: #1ABC9B;
     opacity: 0;
-    transition: opacity .4s;
+    transition: all .4s;
 }
 
 .portfolio-item .img-overlay .icon {
@@ -197,4 +221,48 @@ hr.star-dark {
 
 .portfolio-item:hover .img-overlay {
     opacity: 0.9;
+    border-radius: 2rem;
+}
+
+#about {
+    background-color: #1ABC9B;
+    color: #fff;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about #about-text {
+    margin: 5rem 0;
+}
+
+#about h2 {
+    font-size: 5rem;
+}
+
+#about .text {
+     text-align: center;
+}
+
+#about #about-text .left {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 20rem;
+}
+#about #about-text .right {
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 20rem;
+}
+
+#about-text .text {
+    font-size: 2rem;
+}
+
+#about-bottom {
+    width: 100%;
+    height: auto;
+    
 }
