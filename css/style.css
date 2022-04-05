@@ -347,3 +347,10 @@ footer li {
     display: inline-block;
     margin: .6rem 1rem;
 }
+
+.copyright {
+    text-align: center;
+    background-color: #19262F;
+    padding: 2.4rem 0;
+    color: #fff;
+}
