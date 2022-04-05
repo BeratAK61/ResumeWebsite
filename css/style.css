@@ -32,7 +32,6 @@ section {
 
 .btn {
     margin-top: 2rem;
-    font-size: 2rem;
     font-weight: 400;
     display: inline-block;
     border: 2px solid #fff;
@@ -41,17 +40,30 @@ section {
     transition: all .3s;
 }
 
+.btn-large {
+    font-size: 2rem;
+    padding: 2.2rem 1.6rem;
+}
+
+.btn-small {
+    font-size: 2rem;
+    padding: 1.4rem 1.6rem;
+}
+
+.btn-social {
+    border-radius: 50%;
+    align-items: center;
+}
+
 .btn-outline {  
     color: #fff;
     background-color: transparent;
     border-color: #fff;    
-    padding: 2.2rem 1.6rem;
 }
 
 .btn-outline:hover {
     color: #212529;
     background-color: #fff;
-
 }
 
 .clearfix::after {
@@ -61,7 +73,7 @@ section {
 }
 
 .container {
-    width: 1140px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: .5rem;
@@ -188,7 +200,7 @@ hr.star-primary {
     font-size: 5rem;
 }
 
-#portfolio-images .col {
+.col {
     float: left;
     width: 33.333%;
     padding: 10px;
@@ -309,4 +321,29 @@ hr.star-primary {
 
 input , textarea , label:focus {
     outline: 0;
+}
+
+/* Footer */
+
+footer {
+    padding: 6rem 0;
+    background-color: #000;
+    color: #ffd900;
+    text-align: center;
+}
+
+footer .col { width: 33.333%; }
+
+footer h4 {
+    font-size: 2.4rem;
+}
+
+footer p {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+}
+
+footer li {
+    display: inline-block;
+    margin: .6rem 1rem;
 }
